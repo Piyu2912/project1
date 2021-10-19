@@ -523,31 +523,34 @@
         does
         the
         backtracking.</p>
-    <dl>
-        <dt>
+    <code>
             <font color="brown">
                 boolean mapIsOK()
             </font>
 
-        </dt>
-        <dd>Used by method 1 to check (at a leaf node) whether the entire map is colored correctly.</dd>
-        <dt>
+        </code>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used by method 1 to check (at a leaf node) whether the entire map is
+        colored
+        correctly.</p>
+    <code>
             <font color="brown">
                 boolean okToColor(int row, int column, int color)
             </font>
-        </dt>
-        <dd>Used by method 2 to check, at every node, whether there is an adjacent node already colored with the
-            given
-            color.</dd>
-        <dt>
+        </code>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used by method 2 to check, at every node, whether there is an adjacent
+        node already colored with the
+        given
+        color.</p>
+    <code>
             <font color="brown">
                 int[] nextRowAndColumn(int row, int column)
             </font>
-        </dt>
-        <dd>Used by both methods to find the next "country" (actually, the row and column of the next square on
-            the
-            checkerboard).</dd>
-    </dl>
+        </code>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used by both methods to find the next "country" (actually, the row and
+        column of the next square on
+        the
+        checkerboard).</dd>
+    </p>
 
     <p>Here's the code for method 1:</p>
 
@@ -823,27 +826,30 @@
         without
         throwing it. For example, the following code</p>
 
+    <pre>
+        <font color="#660000" size="4">
+            <b>
+                new Exception("Checkpoint Charlie").printStackTrace(System.out);
+            </b>
+        </font>
+    </pre>
+
+    <p>will print out a message something like this, and the program will then continue normally. That
+        is, the
+        above
+        code just
+        acts like a print statement.</p>
     <font color="#660000" size="4">
-        <b>
-            <pre>
-            new Exception("Checkpoint Charlie").printStackTrace(System.out);
-        </pre>
-
-            <p>will print out a message something like this, and the program will then continue normally. That
-                is, the
-                above
-                code just
-                acts like a print statement.</p>
-
-            <pre>
+        <pre>
+            <b>
             java.lang.Exception: Checkpoint Charlie
                 at TreeSearch.solvable(TreeSearch.java:53)
                 at TreeSearch.solvable(TreeSearch.java:57)
                 at TreeSearch.main(TreeSearch.java:72)
                 at __SHELL38.run(__SHELL38.java:16)
                 at bluej.runtime.ExecServer.suspendExecution(Unknown Source)
+                </b>
             </pre>
-        </b>
     </font>
 
     <h3>Example: Cindy's Puzzle</h3>
